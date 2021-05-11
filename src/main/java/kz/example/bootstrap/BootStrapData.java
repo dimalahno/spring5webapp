@@ -54,8 +54,8 @@ public class BootStrapData implements CommandLineRunner {
 
         Author rod = new Author("Rod", "Johnson");
         Book noEJB = new Book("J2EE Development without EJB", "3939459459");
-        eric.getBooks().add(noEJB);
-        ddd.getAuthors().add(rod);
+        rod.getBooks().add(noEJB);
+        noEJB.getAuthors().add(rod);
 
         noEJB.setPublisher(publisher);
         publisher.getBooks().add(noEJB);
